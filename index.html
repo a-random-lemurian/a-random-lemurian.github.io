@@ -4,17 +4,49 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lemuria</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/main.css">
-    </head>
-    <body>
-        Hi, I'm <b>Lemuria</b>.<br>
-        This domain is parked for now and this is the only page.<br>
-        <script src="" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lemuria</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+</head>
+<body onload="javascript:addmap()">
+    Hi, I'm <b>Lemuria</b>. My name is already taken on a lot of other
+    websites; if that happens I usually go by <b>a_random_lemurian</b>
+    instead. I'm from the Philippines, with an interest in linguistics,
+    fictional maps, and so much more.
+
+    <h2>Socials</h2>
+    <b>GitHub:</b> <a href="https://github.com/a-random-lemurian">a-random-lemurian</a>,
+    <b>YouTube:</b> <a href="https://youtube.com/@a-random-lemurian">Lemuria (@a_random_lemurian)</a>,
+    <b>Twitch:</b> <a href="https://twitch.tv/a_random_lemurian">a_random_lemurian</a>
+    <br>
+    I don't stream or make videos, but I leave comments.
+
+    <hr>
+    <i>September 2023</i><br>
+    I'm also a map maker on OpenGeofiction, working on the country of
+    <a href="https://opengeofiction.net/#map=8/-0.228/124.854&layers=B">Lutang</a>.
+
+    Come see it!
+
+    <div id="map"></div>
+    <script>
+    function addmap() {
+        ogf = L.tileLayer('http://tile.opengeofiction.net/ogf-carto/{z}/{x}/{y}.png', {
+            name: 'mapnik', minZoom: 0, maxZoom: 19,
+            attribution: 'Map data &copy; <a href=\"http://openstreetmap.org\">OpenGeofiction</a>'
+        }),
+        map = L.map('map').setView([0, 125], 7);
+        map.addLayer(ogf);
+        console.log('map loaded');
+    }
+    </script>
+
+</body>
 </html>

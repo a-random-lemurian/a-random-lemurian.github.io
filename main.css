@@ -3,3 +3,17 @@ body {
     color: #fff;
     font-family: 'Gentium Book Plus', serif;
 }
+
+#map {
+    width: 800px;
+    height: 500px;
+    text-align: left;
+}
+
+a:link {
+    color: lightcoral;
+}
+
+a:visited {
+    color: lightgreen;
+}
