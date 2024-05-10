@@ -12,49 +12,33 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
-    <script src="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 </head>
 
-<body onload="javascript:addmap()">
+<body>
     <div class="main">
         <h1>Lemuria</h1>
-        <hr>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Blank_map_of_the_Philippines_%28Provinces%29.svg" height="100px"
+        style="float: right;">
         Hi, I'm <b>Lemuria</b>. My name is already taken on a lot of other
         websites; if that happens I usually go by <b>a_random_lemurian</b>
         instead. I'm from the Philippines, with an interest in linguistics,
         fictional maps, and so much more.
 
-        <h2>Socials</h2>
+        <h2>Socials and links</h2>
+        Of course I have socials, because then how else would I exist on
+        the net?
         <ul>
             <li><b>GitHub:</b> <a href="https://github.com/a-random-lemurian">a-random-lemurian</a></li>
             <li><b>YouTube:</b> <a href="https://youtube.com/@a-random-lemurian">Lemuria (@a_random_lemurian)</a></li>
             <li><b>Twitch:</b> <a href="https://twitch.tv/a_random_lemurian">a_random_lemurian</a></li>
             <li><b>Mastodon:</b> <a rel="me" href="https://mas.to/@lemuria">@lemuria@mas.to</a></li>
         </ul>
-        <br>
         I don't stream or make videos, but I leave comments.
 
-        <hr>
-        <i>September 2023</i><br>
-        I'm also a map maker on OpenGeofiction, working on the country of
-        <a href="https://opengeofiction.net/#map=8/-0.228/124.854&layers=B">Lutang</a>.
-
-        Come see it!
-
-        <div id="map"></div>
-        <script>
-            function addmap() {
-                ogf = L.tileLayer('https://tile.opengeofiction.net/ogf-carto/{z}/{x}/{y}.png', {
-                    name: 'mapnik', minZoom: 0, maxZoom: 19,
-                    attribution: 'Map data &copy; <a href=\"https://openstreetmap.org\">OpenGeofiction</a>'
-                }),
-                    map = L.map('map').setView([0, 125], 7);
-                map.addLayer(ogf);
-                console.log('map loaded');
-            }
-        </script>
-        <hr>
+        <h3>OpenGeofiction</h3>
+        <b>OpenGeofiction</b> is a fictional mapping website that I was most
+        active in during 2023. I still exist on the website.
+        <a href="/ogf.html">More information here.</a>
         <p>
             <b>Last Update:</b> 2024-05-10
         </p>

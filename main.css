@@ -22,3 +22,26 @@ a:link {
 a:visited {
     color: lightgreen;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h2,h3 {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+h1:after,
+h2:after,
+h3:after,
+h4:after,
+h5:after,
+h6:after
+{
+    content:' ';
+    display:block;
+    border:1px solid rgb(104, 104, 104);
+    margin-bottom: 10px;
+}
