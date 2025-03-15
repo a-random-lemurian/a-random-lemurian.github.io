@@ -60,3 +60,37 @@ h6:after
     margin-right: auto;
     width: 50%;
 }
+
+
+
+.navbar-container {
+    margin: 50px;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ccc;
+    padding: 0 15px;
+}
+
+.links {
+    padding: 16px;
+}
+
+.logo {
+    padding: 8px;
+}
